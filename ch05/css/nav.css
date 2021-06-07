@@ -1,0 +1,22 @@
+div{
+    padding-top:20px;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+    margin-right: 15px;
+    border-top: 3px solid #222;
+    padding: 10px 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color:red;
+}
+ul li:hover{ /*:hover 마우스를 올려놓으면 작동*/
+    background-color:#eee;
+}

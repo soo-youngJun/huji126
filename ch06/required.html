@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+    <style>
+        fieldset{
+            margin-bottom: 10px;
+        }
+        #shipping{
+            list-style: none;
+        }
+        #shipping li{
+            line-height: 2.5;
+        }
+        label{
+            width: 80px;
+            float: left;
+        }
+        input[type="submit"], [type="reset"]{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul id="shipping">
+                    <li><label for="prod">주문 상품</label>
+                        <input type="text" id="prod" value="상품용 3KG" readonly>
+                        <!-- readonly : 읽기 전용, 웹상 수정불가 -->
+                    </li>
+                    <li><label for="name">이름</label>
+                        <input type="text" id="name" autofocus required>
+                        <!-- autofocus : 웹상 커서 표시, required : 필수 입력 사항 -->
+                    </li>
+                    <li><label for="addr">배송 주소</label>
+                        <input type="text" id="addr" size=30 required>
+                    </li>
+                    <li><label for="emeil">이메일</label>
+                        <input type="emeil" id="emeil" required>
+                    </li>
+                    <li><label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="하이픈 빼고 입력해주세요" required>
+                    </li>
+                    <li><label for="d-day">배송 지정</label>
+                        <input type="date" id="d-day" min="2021-06-04">
+                    </li>
+                    <li><label for="memo">메모</label>
+                        <textarea cols="40" rows="4" id="memo"></textarea>
+                
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    font-size: 1.2em;
+}
+h1{
+    color: orange !important; /*!important 우선 순위가 높음*/
+}
+.redtext{
+    color: red;
+}

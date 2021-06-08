@@ -95,6 +95,9 @@ footer{
     padding: 5px 20px;
     border-right: 1px solid #ddd;
 }
+#bottomMenu ul li:nth-last-child(1){
+    border: none;
+}
 #bottomMenu li a{
     color: black;
     text-decoration: none;

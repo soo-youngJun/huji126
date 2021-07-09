@@ -1,0 +1,51 @@
+/* 모바일 기준 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 1, 75);
+}
+#container{
+    width: 320px; /* 마진 양쪽 10px*/
+    margin: 50px auto;
+}
+.card{
+    width: 300px;
+    height: 550px; /*그림 250 + 텍스트 300*/
+    background-color: white;
+    position: relative;
+    margin: 20px 10px;
+}
+.word{
+    position: absolute;
+    top: 320px;
+    left: 10px;
+    text-align: center;
+}
+/* 태블릿 기준 */
+@media screen and (min-width: 768px) {
+    #container{
+        width: 570px; /* 마진 양쪽 10px*/
+    }
+    .card{
+        width: 550px;
+        height: 250px;
+        position: relative;
+    }
+    .word{
+        position: absolute;
+        top: 50px;
+        left: 310px;
+    }
+}
+/* pc 기준  (570px*3=1650) + 마진*/ 
+@media screen and (min-width: 1730px) {
+    #container{
+        width: 1750px;
+    }
+    .card{
+        float: left; /*수평 배치*/
+    }
+}
